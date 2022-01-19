@@ -117,7 +117,7 @@ async static Task<JObject?> GetData(string token)
     using HttpClient client = new();
     client.DefaultRequestHeaders.Add("Authorization", token);
     client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36");
-    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+    client.DefaultRequestHeaders.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
     try
     {
         string data = await client.GetStringAsync("https://discord.com/api/v9/users/@me");
