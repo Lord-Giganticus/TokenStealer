@@ -1,0 +1,3 @@
+[submodule "CSharpDiscordWebhook"]
+	path = CSharpDiscordWebhook
+	url = https://github.com/N4T4NM/CSharpDiscordWebhook.git
